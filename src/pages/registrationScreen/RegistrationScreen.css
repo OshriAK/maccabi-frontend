@@ -1,0 +1,28 @@
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.form {
+  border: 2px solid black;
+  padding: 1rem 2.5rem;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 5px 10px 8px grey;
+}
+
+.form > h2 {
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: center;
+}
