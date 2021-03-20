@@ -75,7 +75,7 @@ const RegistrationScreen = () => {
   );
 
   const userSubmitHandler = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     let existedUserEmail = undefined;
     let existedUserName = undefined;
 
@@ -94,7 +94,7 @@ const RegistrationScreen = () => {
     if (!existedUserEmail && !existedUserName) {
       dispatch(setNewUser(formState.inputs));
       setMessage('');
-      history.push('/users', true);
+      history.push('/users');
     }
 
     existedUserEmail && setMessage('The email already exists.');
