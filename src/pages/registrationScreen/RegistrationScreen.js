@@ -75,7 +75,7 @@ const RegistrationScreen = () => {
   );
 
   const userSubmitHandler = (event) => {
-    // event.preventDefault();
+    event.preventDefault();
     let existedUserEmail = undefined;
     let existedUserName = undefined;
 
