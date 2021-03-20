@@ -93,8 +93,10 @@ const RegistrationScreen = () => {
 
     if (!existedUserEmail && !existedUserName) {
       dispatch(setNewUser(formState.inputs));
-      setMessage('');
-      history.push('/users');
+      setTimeout(() => {
+        setMessage('');
+        history.push('/users');
+      }, 200);
     }
 
     existedUserEmail && setMessage('The email already exists.');
